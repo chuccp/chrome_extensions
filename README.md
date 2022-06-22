@@ -1,7 +1,10 @@
 # chrome_extensions
 谷歌插件开发
 
-videocc-download 为插件，chrome安装，请进入开发者模式加载。
+videocc-download.crx 为插件，
+下载后，将后缀改为zip，解压。
+
+使用chrome浏览器或者其它使用相同内核的浏览器，进入开发者模式，选择加载已解压的扩展程序，安装插件。
 
 获取到key 后，可以使用  https://tools.heisir.cn/HLSDownload/ M3U8-Downloader下载m3u8
 
@@ -14,6 +17,7 @@ www.sciconf.cn
 www.weplanning.cn
 
 www.wyzc.com
+
 
 使用方法：
 
