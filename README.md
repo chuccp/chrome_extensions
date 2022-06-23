@@ -1,4 +1,5 @@
 # chrome_extensions
+
 谷歌插件开发
 
 videocc-download.crx 为插件，
@@ -18,7 +19,6 @@ www.weplanning.cn
 
 www.wyzc.com
 
-
 使用方法：
 
 1.安装插件
@@ -28,3 +28,11 @@ www.wyzc.com
 3.在显示的窗口内复制key以及m3u8地址
 
 4.使用M3U8-Downloader下载
+
+###### 
+
+**界面显示**
+
+![_20220623133422.png](./_20220623133422.png)
+
+---
