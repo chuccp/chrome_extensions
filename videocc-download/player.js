@@ -11,9 +11,19 @@ function numToHex( ks ){
     return hex;
 }
 
+
+
+
 function setSource(key,vi,m3u8){
-    $("#key-show .key").val(numToHex(key)+numToHex(vi));
-    $("#key-show .m3u8").val(m3u8);
+
+    var kk = $("#key-show .key");
+    if(kk.length==0){
+        window.parent.$("#key-show .key").val(numToHex(key)+numToHex(vi));
+        window.parent.$("#key-show .m3u8").val(m3u8);
+    }else{
+        $("#key-show .key").val(numToHex(key)+numToHex(vi));
+        $("#key-show .m3u8").val(m3u8);
+    }
 }
 
 !function(t, e) {

@@ -21,11 +21,13 @@
     "activeTab",
     "fileSystemProvider",
     "scripting",
+    "printing",
+    "printingMetrics",
     "tabs"
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.weplanning.cn/*","*://*.sciconf.cn/*","*://*.wyzc.com/*"],
+      "matches": ["*://*.weplanning.cn/*","*://*.sciconf.cn/*","*://*.wyzc.com/*","*://*.aboutcg.org/*","*://*.polyv.net/*", "*://*.shenlanxueyuan.com/*"],
       "js": ["jquery-3.6.0.min.js","content.js"],
       "css": ["css/key-show.css"]
     }
@@ -38,7 +40,9 @@
     "*://*.weplanning.cn/*",
     "*://*.wyzc.com/*",
     "*://*.sciconf.cn/*",
-    "*://*.polyv.net/*"
+    "*://*.aboutcg.org/*",
+    "*://*.polyv.net/*",
+    "*://*.shenlanxueyuan.com/*"
   ],
   "action": {
     "default_popup": "popup.html",
