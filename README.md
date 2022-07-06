@@ -7,7 +7,7 @@ videocc-download.crx 为插件，
 
 使用chrome浏览器或者其它使用相同内核的浏览器，进入开发者模式，选择加载已解压的扩展程序，安装插件。
 
-获取到key 后，可以使用  https://tools.heisir.cn/HLSDownload/ M3U8-Downloader下载m3u8
+获取到key 后，可以使用  https://github.com/HeiSir2014/M3U8-Downloader M3U8-Downloader下载m3u8
 
 目前只针对指定网站获取，而我知道的网站有限，如果您的网站不在下面目录，请留言
 
