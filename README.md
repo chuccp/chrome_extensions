@@ -21,6 +21,8 @@ www.wyzc.com
 
 www.shenlanxueyuan.com
 
+www.mashibing.com
+
 使用方法：
 
 1.安装插件

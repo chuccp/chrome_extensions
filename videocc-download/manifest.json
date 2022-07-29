@@ -27,7 +27,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.weplanning.cn/*","*://*.sciconf.cn/*","*://*.wyzc.com/*","*://*.aboutcg.org/*","*://*.polyv.net/*", "*://*.shenlanxueyuan.com/*"],
+      "matches": ["*://*.weplanning.cn/*","*://*.sciconf.cn/*","*://*.wyzc.com/*","*://*.aboutcg.org/*","*://*.polyv.net/*","*://*.mashibing.com/*", "*://*.shenlanxueyuan.com/*"],
       "js": ["jquery-3.6.0.min.js","content.js"],
       "css": ["css/key-show.css"]
     }
@@ -42,6 +42,7 @@
     "*://*.sciconf.cn/*",
     "*://*.aboutcg.org/*",
     "*://*.polyv.net/*",
+    "*://*.mashibing.com/*",
     "*://*.shenlanxueyuan.com/*"
   ],
   "action": {
