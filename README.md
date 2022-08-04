@@ -5,6 +5,8 @@
 videocc-download.zip 为插件，
 下载后，解压。
 
+不要使用右键另存为下载,否则下载的就是个网页，点击文件进入下一级目录再下载
+
 使用chrome浏览器或者其它使用相同内核的浏览器，进入开发者模式，选择加载已解压的扩展程序，安装插件。
 
 获取到key 后，可以使用  https://github.com/HeiSir2014/M3U8-Downloader M3U8-Downloader下载m3u8
