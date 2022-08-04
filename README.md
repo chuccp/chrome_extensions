@@ -2,8 +2,8 @@
 
 谷歌插件开发
 
-videocc-download.crx 为插件，
-下载后，将后缀改为zip，解压。
+videocc-download.zip 为插件，
+下载后，解压。
 
 使用chrome浏览器或者其它使用相同内核的浏览器，进入开发者模式，选择加载已解压的扩展程序，安装插件。
 
