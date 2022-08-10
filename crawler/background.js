@@ -48,6 +48,7 @@ const writePushScript =  (tabId) => {
 
 }
 const link2 = "http://192.168.1.194:8876/maoYan/parseMaoYanHtml";
+
 const pushData = (tabId,{url,content})=>{
     const formData = new FormData()
     formData.append("url", url)
@@ -56,8 +57,7 @@ const pushData = (tabId,{url,content})=>{
         body: formData,
         method: "POST"
     }).then((res) => {
-        console.log(res)
-        console.log("提交数据完成")
+        writeLog(tabId,"提交数据完成")
     })
 }
 
