@@ -1,0 +1,47 @@
+{
+  "name": "网页获取",
+  "description": "根据接口获取的链接请求，获取对应页面数据",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "*://*/*",
+    "storage",
+    "activeTab",
+    "fileSystemProvider",
+    "scripting",
+    "printing",
+    "printingMetrics",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.maoyan.com/*","*://*.baidu.com/*","*://121.42.232.158:*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "*://*.maoyan.com/*",
+    "*://*.baidu.com/*",
+    "*://121.42.232.158:*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/get_started16.png",
+    "32": "/images/get_started32.png",
+    "48": "/images/get_started48.png",
+    "128": "/images/get_started128.png"
+  }
+}
