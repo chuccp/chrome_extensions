@@ -58,6 +58,8 @@ const pushData = (tabId,{url,content})=>{
         method: "POST"
     }).then((res) => {
         writeLog(tabId,"提交数据完成")
+    }).catch(()=>{
+        writeLog(tabId,"提交数据失败，请检查网络")
     })
 }
 
