@@ -20,14 +20,15 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.maoyan.com/*","*://*.baidu.com/*","*://121.42.232.158:*/*"],
+      "matches": ["*://*.maoyan.com/*","*://*.baidu.com/*","*://121.42.232.158:*/*","*://192.168.1.194:*/*"],
       "js": ["content.js"]
     }
   ],
   "host_permissions": [
     "*://*.maoyan.com/*",
     "*://*.baidu.com/*",
-    "*://121.42.232.158:*/*"
+    "*://121.42.232.158:*/*",
+    "*://192.168.1.194:*/*"
   ],
   "action": {
     "default_popup": "popup.html",

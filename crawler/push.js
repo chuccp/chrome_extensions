@@ -1,5 +1,5 @@
 const loadNew = ()=>{
-    const time = 10000
+    const time = 10*1000
     console.log(`等待${time/1000}秒，获取远程链接`)
     setInterval(()=>{
         console.log(`获取远程连接`)
@@ -7,10 +7,8 @@ const loadNew = ()=>{
             console.log("获取远程连接信息反馈")
         });
     },time)
-
-
 }
-const time = 5000
+const time = 5*1000
 console.log(`等待${time/1000}秒提交数据`)
 setTimeout(()=>{
     const doc = document.body.outerHTML

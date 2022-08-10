@@ -19,18 +19,22 @@ const writeLog = (tabId, text) => {
     }, () => {
     })
 }
+
+const link1 = "http://192.168.1.194:8876/maoYan/getMaoYanDetailUrl";
 const loadNewLink = (tabId) => {
     writeLog(tabId,"准备获取新连接")
-    fetch("http://121.42.232.158:8092/crawler-dynamic/maoYan/getMaoYanDetailUrl").then(async res => {
+    fetch(link1).then(async res => {
         const body = await res.json()
         if (body.data) {
             writeLog(tabId,"跳转新链接："+body.data)
             chrome.scripting.executeScript({target: {tabId: tabId},func:location,args:[body.data]},()=>{
 
             })
+        }else{
+            writeLog(tabId,"获取远程链接为空")
         }
     }).catch(() => {
-
+        writeLog(tabId,"获取远程链接异常,请检查网络")
     })
 }
 
@@ -43,12 +47,12 @@ const writePushScript =  (tabId) => {
     })
 
 }
-
+const link2 = "http://192.168.1.194:8876/maoYan/parseMaoYanHtml";
 const pushData = (tabId,{url,content})=>{
     const formData = new FormData()
     formData.append("url", url)
     formData.append("content",content)
-    fetch("http://121.42.232.158:8092/crawler-dynamic/maoYan/parseMaoYanHtml", {
+    fetch(link2, {
         body: formData,
         method: "POST"
     }).then((res) => {
