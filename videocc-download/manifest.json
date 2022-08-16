@@ -27,7 +27,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*.weplanning.cn/*","*://*.sciconf.cn/*","*://*.wyzc.com/*","*://*.aboutcg.org/*","*://*.polyv.net/*","*://*.mashibing.com/*", "*://*.shenlanxueyuan.com/*"],
+      "matches": ["*://*.weplanning.cn/*","*://*.sciconf.cn/*","*://*.wyzc.com/*","*://*.aboutcg.org/*","*://*.polyv.net/*","*://*.mashibing.com/*", "*://*.shenlanxueyuan.com/*","*://*.luffycity.com/*"],
       "js": ["jquery-3.6.0.min.js","content.js"],
       "css": ["css/key-show.css"]
     }
@@ -43,7 +43,8 @@
     "*://*.aboutcg.org/*",
     "*://*.polyv.net/*",
     "*://*.mashibing.com/*",
-    "*://*.shenlanxueyuan.com/*"
+    "*://*.shenlanxueyuan.com/*",
+    "*://*.luffycity.com/*"
   ],
   "action": {
     "default_popup": "popup.html",

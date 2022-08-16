@@ -25,6 +25,8 @@ www.shenlanxueyuan.com
 
 www.mashibing.com
 
+www.luffycity.com
+
 使用方法：
 
 1.安装插件
