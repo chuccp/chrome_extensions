@@ -19,8 +19,8 @@ const writeLog = (tabId, text) => {
     }, () => {
     })
 }
-const link1 = "http://121.42.232.158:8092/crawler-dynamic/maoYan/getMaoYanDetailUrl";
-// const link1 = "http://192.168.1.194:8876/maoYan/getMaoYanDetailUrl";
+
+ const link1 = "http://192.168.1.194:8876/maoYan/getMaoYanDetailUrl";
 const loadNewLink = (tabId) => {
     writeLog(tabId,"准备获取新连接")
     fetch(link1).then(async res => {
@@ -47,8 +47,7 @@ const writePushScript =  (tabId) => {
     })
 
 }
-// const link2 = "http://192.168.1.194:8876/maoYan/parseMaoYanHtml";
-const link2 = "http://121.42.232.158:8092/crawler-dynamic/maoYan/parseMaoYanHtml"
+ const link2 = "http://192.168.1.194:8876/maoYan/parseMaoYanHtml";
 const pushData = (tabId,{url,content})=>{
     const formData = new FormData()
     formData.append("url", url)
