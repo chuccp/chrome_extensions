@@ -1,0 +1,48 @@
+{
+  "name": "网页数据获取",
+  "description": "获取网页数据并且提交",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "*://*/*",
+    "storage",
+    "activeTab",
+    "fileSystemProvider",
+    "scripting",
+    "printing",
+    "printingMetrics",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.maoyan.com/*","*://121.42.232.158:*/*","*://127.0.0.1:*/*"],
+      "js": ["js/jquery-3.6.0.min.js","js/content.js"],
+      "css": ["css/options.css"]
+    }
+  ],
+  "web_accessible_resources":[{
+    "resources": ["html/*.html","js/*.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "host_permissions": ["*://*.maoyan.com/*","*://121.42.232.158:*/*","*://127.0.0.1:*/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/get_started16.png",
+    "32": "/images/get_started32.png",
+    "48": "/images/get_started48.png",
+    "128": "/images/get_started128.png"
+  }
+}

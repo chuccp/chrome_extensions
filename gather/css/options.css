@@ -1,0 +1,25 @@
+#gather-view{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    z-index: 10000;
+}
+#gather-view .click{
+    height: 38px;
+    width: 50px;
+    display: block;
+    text-decoration: unset;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+}
+#gather-view a:hover{
+    color: white;
+}
+#gather-view a:active{
+
+    color: green;
+
+}
